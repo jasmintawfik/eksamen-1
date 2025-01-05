@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class Student {
     private String name;
     private ArrayList<Course> courses;
-// her har vi en datatype som er string som vi erklærer ved at give variabelnanvet name
+    // her har vi en datatype som er string som vi erklærer ved at give variabelnanvet name
     //her i attributter er attributten erklæret men ikke intlizerede
 
     public Student(String name) {

@@ -7,7 +7,7 @@ public class Academy {
 
     //ansvarlig for at printe diplomer og højste og laveste s
     public Academy() {
-     //   this.lowestGrades = lowestGrades;
+     //  this.lowestGrades = lowestGrades;
       //  this.highestGrades = highestGrades;
         this.students = new ArrayList<>();
     }
@@ -22,7 +22,7 @@ public class Academy {
         System.out.println("Diploma for: " + student.getName());
         //her kalder vi på student vores varibel navn og getter name fra student klassen
         System.out.println("---------------------------");
-//for at gøre output flottere
+        //for at gøre output flottere
         // Iterér gennem kurser og karakterer
         for (Course course : student.getCourses()) {
             System.out.println(course.getName() + ": " + course.getGrade());
@@ -31,8 +31,8 @@ public class Academy {
         System.out.println(); // Tilføj en tom linje efter hvert diplom for adskillelse
     }
 
-    //laver en for each for at iteere gennem vores kursere vores arrayliste
-    // og derefter tilføjer vi vores karakter med getter fra course klassen
+        //laver en for each for at iteere gennem vores kursere vores arrayliste
+        // og derefter tilføjer vi vores karakter med getter fra course klassen
 
 
 

@@ -33,7 +33,9 @@ public class Main {
         student2.addCourseGrade("Systemudvikling",4);
 
         Student student3 = new Student("Ebru");
-
+        student2:
+        //student2 er variabelnavnet, der refererer til et objekt
+       // af klassen Student. Dette objekt blev sandsynligvis oprettet tidligere:
 
         student3.addCourseGrade("Databaser",4);
         student3.addCourseGrade("Webprogrammering",10);
