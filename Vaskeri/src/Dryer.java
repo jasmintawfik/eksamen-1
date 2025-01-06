@@ -1,30 +1,30 @@
 import java.util.Scanner;
 
-public class Dryer implements LaundryMachine {
-
+   public class Dryer implements LaundryMachine {
+   //attributter
    private int duration;
    private double price;
+//private acces modifer
 
+   //konstruktør
    public Dryer(int duration, double price) {
-      this.duration = 30;
-      this.price = 0.5;
-
-
-
+      this.duration = 30; //standartværdi
+      this.price = 0.5; //per minut
+     //snak om override
+//override = overskriver metoder fra interface klassen
    }
 
    @Override
    public void chooseProgram() {
-      System.out.println("lav varme");
-      System.out.println("høj varme");
+      System.out.println("Lav varme");
+      System.out.println("Høj varme");
 
+      //scanner user input/læse brugerens input
+      Scanner choice = new Scanner(System.in);
+      int valg = choice.nextInt();
 
-
-      Scanner time = new Scanner(System.in);
-      int valg1 = time.nextInt();
-
-
-      switch (valg1) {
+      //en switch mere læsbarligt end en if else
+      switch (valg) {
          case 1:
             System.out.println("du har valgt 1");
             break;
@@ -34,29 +34,28 @@ public class Dryer implements LaundryMachine {
 
       }
 
-
    }
-
 
 
    @Override
    public void displayPriceAndDuration() {
-
+//vi henter vores værdier/value
       System.out.println("Pris: " + price + " kr. | Varighed: " + duration + " minutter | Kapacitet: "  + " kg");
    }
 
 
    @Override
    public void start() {
-      this.duration = duration;  //så det fra mariam ikke noget jeg selv har lavet
-      System.out.println("er startet" +  duration);
-   }
+//henter vores værdi i duration
+      System.out.println("er startet " +  duration);
 
+
+   }
    @Override
-   public void addExtra() {
-
-
-
+   public String toString() {
+      return "Tørretumbler med standard varighed: " + duration + " minutter";
    }
+
+//hvad er en tostringt
 
 }

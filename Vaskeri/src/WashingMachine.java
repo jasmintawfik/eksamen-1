@@ -4,18 +4,14 @@ public class WashingMachine implements LaundryMachine {
 
     private int duration;
     private double price = 1.2;
-   private boolean isRunning;
+    private boolean isRunning;
     private int capacity;
 
 
-    public WashingMachine( int capacity,boolean isRunning) {
+    public WashingMachine(int capacity, boolean isRunning) {
         this.isRunning = isRunning;
         this.capacity = capacity;
 
-
-
-
-        //  public void washingMachine(int capacity) {
 
     }
 
@@ -31,12 +27,15 @@ public class WashingMachine implements LaundryMachine {
 
         switch (valg) {
             case 1:
+                duration = 30;
                 System.out.println("Du har valgt uld og silke. Varigheden er 30 minutter");
                 break;
-            case 2:
+                case 2:
+                duration = 50;
                 System.out.println("Du har valgt bomuld 40. Varigheden er 50 minutter");
                 break;
-            case 3 :
+                case 3:
+                duration = 60;
                 System.out.println("Du har valgt bomuld 60. Varigheden er 60 minutter");
                 break;
         }
@@ -47,8 +46,7 @@ public class WashingMachine implements LaundryMachine {
 
     @Override
     public void displayPriceAndDuration() {
-
-        System.out.println("Price and Duration" + price + duration + capacity);
+        System.out.println("Price and Duration " + price + duration + capacity);
 
     }
 
@@ -56,13 +54,13 @@ public class WashingMachine implements LaundryMachine {
     public void start() {
         isRunning = true;
         System.out.println("Programmet er startet");
+
     }
 
     @Override
-    public void addExtra() {
-
+    public String toString() {
+        return "Vaskemaskine med kapacitet: " + capacity + " kg";
     }
-
 }
 
 

@@ -1,14 +1,11 @@
 
     public interface LaundryMachine {
 
-    void chooseProgram();
+        void chooseProgram(); //abstract metoder
 
-    void displayPriceAndDuration ();
+        void displayPriceAndDuration(); //abstract metoder
 
-    void start ();
-
-    void addExtra ();
+        void start(); //abstract metoder
 
 
     }
-
